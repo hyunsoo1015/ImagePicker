@@ -3,19 +3,50 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09928C7D6DFEBF943F931920 /* Pods_ImagePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D88F4D451BE5BB58412305 /* Pods_ImagePicker.framework */; };
 		6C7ABED22511AD700060CEEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7ABED12511AD700060CEEF /* AppDelegate.swift */; };
 		6C7ABED42511AD700060CEEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7ABED32511AD700060CEEF /* SceneDelegate.swift */; };
 		6C7ABED62511AD700060CEEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7ABED52511AD700060CEEF /* ViewController.swift */; };
 		6C7ABED92511AD700060CEEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7ABED72511AD700060CEEF /* Main.storyboard */; };
 		6C7ABEDB2511AD710060CEEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C7ABEDA2511AD710060CEEF /* Assets.xcassets */; };
 		6C7ABEDE2511AD710060CEEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7ABEDC2511AD710060CEEF /* LaunchScreen.storyboard */; };
+		6C7ABEEB2511E3A90060CEEF /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7ABEEA2511E3A90060CEEF /* PhotosUI.framework */; };
+		6C7ABEED2511E3A90060CEEF /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7ABEEC2511E3A90060CEEF /* Photos.framework */; };
+		6C7ABEF02511E3A90060CEEF /* PhotoEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7ABEEF2511E3A90060CEEF /* PhotoEditingViewController.swift */; };
+		6C7ABEF32511E3A90060CEEF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7ABEF12511E3A90060CEEF /* MainInterface.storyboard */; };
+		6C7ABEF72511E3A90060CEEF /* MyPhotoExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C7ABEE92511E3A90060CEEF /* MyPhotoExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6C7ABEF52511E3A90060CEEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C7ABEC62511AD700060CEEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C7ABEE82511E3A90060CEEF;
+			remoteInfo = MyPhotoExt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6C7ABEF82511E3A90060CEEF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6C7ABEF72511E3A90060CEEF /* MyPhotoExt.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		48A554629E757CBA0F80B5E1 /* Pods-ImagePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagePicker.debug.xcconfig"; path = "Target Support Files/Pods-ImagePicker/Pods-ImagePicker.debug.xcconfig"; sourceTree = "<group>"; };
 		6C7ABECE2511AD700060CEEF /* ImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C7ABED12511AD700060CEEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C7ABED32511AD700060CEEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +55,14 @@
 		6C7ABEDA2511AD710060CEEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C7ABEDD2511AD710060CEEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C7ABEDF2511AD710060CEEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C7ABEE92511E3A90060CEEF /* MyPhotoExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyPhotoExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C7ABEEA2511E3A90060CEEF /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		6C7ABEEC2511E3A90060CEEF /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		6C7ABEEF2511E3A90060CEEF /* PhotoEditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditingViewController.swift; sourceTree = "<group>"; };
+		6C7ABEF22511E3A90060CEEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6C7ABEF42511E3A90060CEEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F0D532617D03A7A204B990F /* Pods-ImagePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagePicker.release.xcconfig"; path = "Target Support Files/Pods-ImagePicker/Pods-ImagePicker.release.xcconfig"; sourceTree = "<group>"; };
+		C9D88F4D451BE5BB58412305 /* Pods_ImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +70,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09928C7D6DFEBF943F931920 /* Pods_ImagePicker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C7ABEE62511E3A90060CEEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C7ABEEB2511E3A90060CEEF /* PhotosUI.framework in Frameworks */,
+				6C7ABEED2511E3A90060CEEF /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +90,10 @@
 			isa = PBXGroup;
 			children = (
 				6C7ABED02511AD700060CEEF /* ImagePicker */,
+				6C7ABEEE2511E3A90060CEEF /* MyPhotoExt */,
 				6C7ABECF2511AD700060CEEF /* Products */,
+				80FB3C145444683D2B534C82 /* Pods */,
+				91F1176D05A0786EB53218C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				6C7ABECE2511AD700060CEEF /* ImagePicker.app */,
+				6C7ABEE92511E3A90060CEEF /* MyPhotoExt.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +120,35 @@
 			path = ImagePicker;
 			sourceTree = "<group>";
 		};
+		6C7ABEEE2511E3A90060CEEF /* MyPhotoExt */ = {
+			isa = PBXGroup;
+			children = (
+				6C7ABEEF2511E3A90060CEEF /* PhotoEditingViewController.swift */,
+				6C7ABEF12511E3A90060CEEF /* MainInterface.storyboard */,
+				6C7ABEF42511E3A90060CEEF /* Info.plist */,
+			);
+			path = MyPhotoExt;
+			sourceTree = "<group>";
+		};
+		80FB3C145444683D2B534C82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48A554629E757CBA0F80B5E1 /* Pods-ImagePicker.debug.xcconfig */,
+				6F0D532617D03A7A204B990F /* Pods-ImagePicker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		91F1176D05A0786EB53218C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9D88F4D451BE5BB58412305 /* Pods_ImagePicker.framework */,
+				6C7ABEEA2511E3A90060CEEF /* PhotosUI.framework */,
+				6C7ABEEC2511E3A90060CEEF /* Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,18 +156,39 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C7ABEE22511AD710060CEEF /* Build configuration list for PBXNativeTarget "ImagePicker" */;
 			buildPhases = (
+				6D912B6EC0C7AD6496A7F323 /* [CP] Check Pods Manifest.lock */,
 				6C7ABECA2511AD700060CEEF /* Sources */,
 				6C7ABECB2511AD700060CEEF /* Frameworks */,
 				6C7ABECC2511AD700060CEEF /* Resources */,
+				AF833AABA1D314FEF3001EDC /* [CP] Embed Pods Frameworks */,
+				6C7ABEF82511E3A90060CEEF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6C7ABEF62511E3A90060CEEF /* PBXTargetDependency */,
 			);
 			name = ImagePicker;
 			productName = ImagePicker;
 			productReference = 6C7ABECE2511AD700060CEEF /* ImagePicker.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6C7ABEE82511E3A90060CEEF /* MyPhotoExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C7ABEFB2511E3A90060CEEF /* Build configuration list for PBXNativeTarget "MyPhotoExt" */;
+			buildPhases = (
+				6C7ABEE52511E3A90060CEEF /* Sources */,
+				6C7ABEE62511E3A90060CEEF /* Frameworks */,
+				6C7ABEE72511E3A90060CEEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyPhotoExt;
+			productName = MyPhotoExt;
+			productReference = 6C7ABEE92511E3A90060CEEF /* MyPhotoExt.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +201,9 @@
 				ORGANIZATIONNAME = "Hyun Soo Kim";
 				TargetAttributes = {
 					6C7ABECD2511AD700060CEEF = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					6C7ABEE82511E3A90060CEEF = {
 						CreatedOnToolsVersion = 11.7;
 					};
 				};
@@ -116,6 +222,7 @@
 			projectRoot = "";
 			targets = (
 				6C7ABECD2511AD700060CEEF /* ImagePicker */,
+				6C7ABEE82511E3A90060CEEF /* MyPhotoExt */,
 			);
 		};
 /* End PBXProject section */
@@ -131,7 +238,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C7ABEE72511E3A90060CEEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C7ABEF32511E3A90060CEEF /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D912B6EC0C7AD6496A7F323 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImagePicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF833AABA1D314FEF3001EDC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImagePicker/Pods-ImagePicker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImagePicker/Pods-ImagePicker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImagePicker/Pods-ImagePicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6C7ABECA2511AD700060CEEF /* Sources */ = {
@@ -144,7 +301,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C7ABEE52511E3A90060CEEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C7ABEF02511E3A90060CEEF /* PhotoEditingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C7ABEF62511E3A90060CEEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C7ABEE82511E3A90060CEEF /* MyPhotoExt */;
+			targetProxy = 6C7ABEF52511E3A90060CEEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6C7ABED72511AD700060CEEF /* Main.storyboard */ = {
@@ -161,6 +334,14 @@
 				6C7ABEDD2511AD710060CEEF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6C7ABEF12511E3A90060CEEF /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C7ABEF22511E3A90060CEEF /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -282,7 +463,9 @@
 		};
 		6C7ABEE32511AD710060CEEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48A554629E757CBA0F80B5E1 /* Pods-ImagePicker.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59RGUS3272;
@@ -300,7 +483,9 @@
 		};
 		6C7ABEE42511AD710060CEEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F0D532617D03A7A204B990F /* Pods-ImagePicker.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59RGUS3272;
@@ -311,6 +496,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hs.ImagePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6C7ABEF92511E3A90060CEEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59RGUS3272;
+				INFOPLIST_FILE = MyPhotoExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hs.ImagePicker.MyPhotoExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C7ABEFA2511E3A90060CEEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59RGUS3272;
+				INFOPLIST_FILE = MyPhotoExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hs.ImagePicker.MyPhotoExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -333,6 +556,15 @@
 			buildConfigurations = (
 				6C7ABEE32511AD710060CEEF /* Debug */,
 				6C7ABEE42511AD710060CEEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C7ABEFB2511E3A90060CEEF /* Build configuration list for PBXNativeTarget "MyPhotoExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C7ABEF92511E3A90060CEEF /* Debug */,
+				6C7ABEFA2511E3A90060CEEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
